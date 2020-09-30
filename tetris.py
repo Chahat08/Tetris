@@ -5,6 +5,10 @@ import tkMessageBox
 from random import choice
 from collections import Counter
 
+# changing the application's DPI Awareness so that it is rendered clearly.
+import ctypes
+ctypes.windll.shcore.SetProcessDpiAwareness(1)
+
 class Game():
     WIDTH = 300
     HEIGHT = 500
